@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            font: normal 20pt Arial;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,8 +18,9 @@
     <script>
 
         var nome = window.prompt('qual seu nome?'); //Vai perguntar o nome
-        document.write(`seu nome tem ${nome.length} letras`); // concatenação
-
+        document.write(`olá, <strong>${nome}</strong>, seu nome tem ${nome.length} letras </br>`); // concatenação com método length
+        document.write(`seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong> </br>`); // concatenação com método toUpperCase
+        document.write(`seu nome em minúsculas é <strong>${nome.toLowerCase()}</strong>`); // concatenação com método toLowerCase
     </script>
 
 </body>
