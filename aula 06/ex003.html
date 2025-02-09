@@ -19,10 +19,17 @@
    <h1 class="hello-world"> Olá, mundo!</h1> 
    <p>já me livrei da maldição ufa!</p>
    <script>
-    var n1 = Number.parseInt(window.prompt('Digite um número:')); // window.prompt sempre retorna string, por isso vamos converter para number
-    var n2 = Number.parseInt(window.prompt('Digite outro número:')); // window.prompt sempre retorna string, por isso vamos converter para number
-    var s= n1 + n2;
-    window.alert(' a soma dos valores é:' + s); // Concatenação
+    var n1 = Number.parseFloat(window.prompt('Digite um número:'));
+    var n2 = Number.parseFloat(window.prompt('Digite outro número:'));
+
+    // Solicita ao usuário que insira um número e converte a entrada de string para número inteiro
+    // var n1 = Number.parseInt(window.prompt('Digite um número:'));
+
+    // Solicita ao usuário que insira outro número e converte a entrada de string para número inteiro
+    // var n2 = Number.parseInt(window.prompt('Digite outro número:'));
+
+    var s = n1 + n2;
+    window.alert('A soma dos valores é: ' + s); // Concatenação
     // number + number para adição
     // string + string para concatenação
    </script>
