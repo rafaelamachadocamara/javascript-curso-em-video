@@ -18,7 +18,7 @@
     <h1> Iniciando estudos com DOM </h1>
     <p>Aqui vai o resultado!</p>
     <p>aprendendo a usar o <strong> DOM </strong> em javascript.</p>
-    <div class="msg">Clique em mim.</div>
+    <div id="msg">Clique em mim.</div>
     <script>
         var corpo = document.body;
         var p1 = document.getElementsByTagName('p')[1];
@@ -36,7 +36,11 @@
          d.innerText = 'xiii';
          */
 
-        document.getElementsByClassName('msg')[0].innerText = 'Clique em mim.';
+        // document.getElementsByClassName('msg')[0].innerText = 'Clique em mim.';
+
+        var d = document.querySelector('div#msg');
+        d.style.color = 'blue';
+        d.style.background = 'yellow';
     </script>
 </body>
 
