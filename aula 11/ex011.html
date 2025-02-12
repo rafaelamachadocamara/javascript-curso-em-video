@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <h1>qual seu país?</h1>
-    digite aqui: <input type="text" name="txtpais" id="txtpais">
+    <h1>Qual seu país?</h1>
+    Digite aqui: <input type="text" name="txtpais" id="txtpais">
     <input type="button" value="Verificar" onclick="verificar()">
     <div id="res"></div>
 
@@ -22,13 +22,17 @@
         function verificar() {
             var txtp = document.getElementById('txtpais');
             var res = document.getElementById('res');
-            var pais = txtp.value;
-            res.innerHTML = `<p> seu país é <strong>${pais}</strong>`
-            if (pais != "brasil") {
-                res.innerHTML += "<p> vc é estrangeiro</p>"
-            } else {
-                res.innerHTML += "<p> salve brasileiro!</p>"
+            var pais = txtp.value.trim();
 
+
+            var paisFormatado = pais.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+            res.innerHTML = `<p>Seu país é <strong>${pais}</strong></p>`;
+
+            if (paisFormatado !== "brasil") {
+                res.innerHTML += "<p>Você é estrangeiro</p>";
+            } else {
+                res.innerHTML += "<p>Salve, brasileiro!</p>";
             }
         }
     </script>
