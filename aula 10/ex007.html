@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando números</title>
     <style>
+        body{
+            font: normal 18pt Arial;
+        }
+
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
         #soma{
             cursor: pointer;
+        }
+
+        #res{
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -25,7 +38,7 @@
             var n2 = Number(tn2.value);
             var s = n1 + n2;
 
-            res.innerHTML = s
+            res.innerHTML = `a soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`;
         }
     </script>
 </body>
