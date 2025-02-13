@@ -16,8 +16,6 @@ dias no javascript
 
 */
 
-console.log(diaSem);
-
 switch (diaSem) {
   case 0:
     console.log("Domingo");
