@@ -10,11 +10,10 @@ console.log('olá mundo!'); */
 
 var contador = 1;
 
-// aqui iremos testar primeiro e executar depois
 
 while (contador <= 6) {
-  // repetições
-  console.log(`passo ${contador}`);
+// aqui iremos testar primeiro e executar depois
+console.log(`passo ${contador}`);
   contador++;
 }
 
