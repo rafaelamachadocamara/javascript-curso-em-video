@@ -27,4 +27,15 @@ img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    text-align: center;
+}
+
+#res {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#res img {
+    display: block;
+    margin: 10px auto;
 }
