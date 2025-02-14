@@ -1,3 +1,15 @@
+window.onload = function () {
+    nome();
+};
+
+function nome() {
+    var n = 'Rafaela';
+    var nomeRes = document.getElementById('nomeRes');
+    if (nomeRes) {
+        nomeRes.innerHTML = `Desenvolvido por: ${n}`;
+    }
+}
+
 function verificar() {
     var data = new Date();
     var ano = data.getFullYear();
@@ -48,3 +60,4 @@ function verificar() {
         res.appendChild(img);
     }
 }
+
