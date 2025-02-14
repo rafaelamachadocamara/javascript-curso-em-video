@@ -1,7 +1,7 @@
 var contador = 1;
 
 while (contador <= 6) { // repetições
-  console.log("olá mundo!");
+  console.log(`passo ${contador}`);
   contador++;
 }
 
