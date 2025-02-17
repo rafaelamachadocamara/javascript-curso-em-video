@@ -1,24 +1,67 @@
 body {
-    background: rgb(70, 142, 236);
-    font: normal 15pt Arial;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 header {
+    background: #e48dce;
     color: white;
-    text-align: center;
+    padding: 15px;
+    font-size: 1.5em;
 }
 
 section {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
     background: white;
+    padding: 20px;
     border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"],
+input[type="button"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input[type="button"] {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="button"]:hover {
+    background: #218838;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
 }
 
 footer {
-    color: white;
-    text-align: center;
-    font-style: italic;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
 }
