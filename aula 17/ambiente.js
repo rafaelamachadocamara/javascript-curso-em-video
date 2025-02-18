@@ -6,11 +6,14 @@ console.log(num);
 console.log(`O vetor tem ${num.length} posições`);
 console.log(`O primeiro valor do vetor é ${num[0]}`);
 
-
 /* O método indexOf() retorna o primeiro índice em que 
 o elemento pode ser encontrado no array, 
-retorna -1 se o elemento não estiver presente.  */ 
+retorna -1 se o elemento não estiver presente.  */
 
 let pos = num.indexOf(8);
 
-console.log(`O valor 8 está na posição ${pos}`); // O valor 8 está na posição 4
+if (pos == -1) {
+  console.log("O valor não foi encontrado");
+} else {
+  console.log(`O valor 8 está na posição ${pos}`); // O valor 8 está na posição 4
+}
