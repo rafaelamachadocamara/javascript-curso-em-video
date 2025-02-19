@@ -2,6 +2,14 @@ let num = document.querySelector('input#fnum');
 let lista = document.querySelector('select#flista');
 let res = document.querySelector('div#res');
 let valores = [];
+var n = 'Rafaela';
+
+function nome() {
+    var nomeRes = document.getElementById('nomeRes');
+    if (nomeRes) {
+        nomeRes.innerHTML = `Desenvolvido por: ${n}`;
+    }
+}
 
 function isNumero(n) {
     if (Number(n) >= 1 && Number(n) <= 100) {
@@ -44,7 +52,7 @@ function finalizar() {
         let menor = valores[0];
         let soma = 0;
         let media = 0;
-        for(let pos in valores) {
+        for (let pos in valores) {
             soma += valores[pos];
             if (valores[pos] > maior) {
                 maior = valores[pos];
